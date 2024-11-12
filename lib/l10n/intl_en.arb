@@ -1,0 +1,83 @@
+{
+  "title" : "Newsify",
+
+  "onboarding_title1" : "Explore News by Categories",
+  "onboarding_title2" : "Read Anytime, Anywhere",
+  "onboarding_title3" : "Find What You’re Looking For",
+
+  "onboarding_body1" : "Discover a wide range of topics that interest you! From technology to sports, select your favorite categories and stay updated on the news that matters most to you.",
+  "onboarding_body2" : "Save articles to read offline, even when you’re not connected to the internet. Catch up on your favorite stories at your convenience!",
+  "onboarding_body3" : "Quickly search for specific topics, events, or stories. Our search feature makes it easy to find exactly what you need from our wide selection of articles.",
+
+  "skip" : "Skip",
+  "next" : "Continue",
+  "interests" : "Interests",
+  "confirm" : "Confirm",
+
+  "home" : "Home",
+  "search" : "Search",
+  "archive" : "Archive",
+  "settings" : "Setting",
+  "account" : "Account",
+  "terms_conditions" : "Terms & Conditions",
+  "about" : "About",
+  "dark_mode" : "Dark Mode",
+  "dark" : "Dark",
+  "light" : "Light",
+  "language" : "Language",
+  "source" : "Source",
+
+  "category_all" : "For You",
+  "category_business" : "Business",
+  "category_entertainment" : "Entertainment",
+  "category_health" : "Health",
+  "category_science" : "Science",
+  "category_sports" : "Sports",
+  "category_technology" : "Technology",
+  "category_politics" : "Politics",
+  "category_top" : "Top",
+  "category_world" : "World",
+  "category_tourism" : "Tourism",
+  "share" : "Share",
+  "save" : "Save",
+  "unsave" : "Unsave",
+  "read_more" : "...read more",
+  "no_archive" : "You haven't archived any news yet.",
+  "error" : "We’re having trouble retrieving data at the moment. Please try again later.",
+
+
+  "our_mission_title" : "our Mission",
+  "our_mission_body" : "Newsify is committed to delivering accurate, timely, and relevant news to keep you informed about what matters most.",
+
+  "features" : "Features",
+  "feature1_title" : "Personalized News Feed",
+  "feature1_body" : "Tailored news based on your interests",
+  "feature2_title" : "Smart Categories",
+  "feature2_body" : "Easy navigation through organized sections",
+  "feature3_title" : "Offline Reading",
+  "feature3_body" : "Save articles to read later",
+  "feature4_title" : "Breaking News",
+  "feature4_body" : "Stay informed with important news",
+
+  "version" : "Version",
+  "current_version" : "Current Version: 1.0.0",
+  "last_update" : "Last Updated: November 2024",
+  "contact_us" : "Contact Us",
+  "credits" : "Credits",
+  "developed_by" : "Developed by: Karim Khater",
+  "news_sources" : "News Sources",
+
+  "terms_section1_title" : "1. Acceptance of Terms",
+  "terms_section1_body" : "By downloading, installing, or using Newsify, you agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, you do not have permission to access the App.",
+  "terms_section2_title" : "2. Use License",
+  "terms_section2_body" : "Newsify grants you a limited, non-exclusive, non-transferable license to:",
+
+  "terms_point1" : "Download and install the App on your personal devices",
+  "terms_point2" : "Access and view news content through the App",
+  "terms_point3" : "Save articles for personal, non-commercial use"
+
+
+
+
+
+}
