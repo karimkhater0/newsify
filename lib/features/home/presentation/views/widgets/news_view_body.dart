@@ -28,7 +28,7 @@ class NewsViewBody extends StatelessWidget {
       
                 SourceInfoWidget(model: model,),
 
-                NewsContentWidget(text: model.description!, url: model.link!),
+                NewsContentWidget(text: model.description ?? '', url: model.link!),
 
               ],
             ),

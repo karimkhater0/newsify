@@ -450,6 +450,26 @@ class S {
     );
   }
 
+  /// `No Data`
+  String get no_data {
+    return Intl.message(
+      'No Data',
+      name: 'no_data',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No Internet Connection`
+  String get no_internet {
+    return Intl.message(
+      'No Internet Connection',
+      name: 'no_internet',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `our Mission`
   String get our_mission_title {
     return Intl.message(

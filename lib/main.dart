@@ -5,7 +5,7 @@ import 'package:newsify/features/splash/splash_view.dart';
 
 import 'bloc_observer.dart';
 import 'core/cache_helper.dart';
-import 'core/utils/dio_helper.dart';
+import 'core/dio_helper.dart';
 import 'features/home/presentation/manager/home_cubit/home_cubit.dart';
 import 'features/home/presentation/manager/localization_cubit/localization_cubit.dart';
 import 'features/home/presentation/manager/theme_cubit/theme_cubit.dart';
@@ -13,18 +13,16 @@ import 'generated/l10n.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  DioHelper.init();
   await CacheHelper.init();
+  DioHelper.init();
+  await HomeCubit().initializeDatabase();
   Bloc.observer = MyBlocObserver();
-
-
 
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key,});
-
 
 
   @override
@@ -39,7 +37,7 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider<HomeCubit>(
             create: (context) => HomeCubit()
-              ..createDatabase()
+              ..loadArticles()
               ..getNews()
               ..getCategorizedNews('business')
         ),

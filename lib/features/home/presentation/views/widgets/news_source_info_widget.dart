@@ -21,7 +21,7 @@ class SourceInfoWidget extends StatelessWidget {
           ),
           const SizedBox(width: 10,),
           Text(
-            model.sourceName!,
+            model.sourceName ?? 'Unknown',
             style: Styles.tsH3Medium,
             overflow: TextOverflow.ellipsis,
           ),

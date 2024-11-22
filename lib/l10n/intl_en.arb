@@ -44,6 +44,8 @@
   "read_more" : "...read more",
   "no_archive" : "You haven't archived any news yet.",
   "error" : "We’re having trouble retrieving data at the moment. Please try again later.",
+  "no_data" : "No Data",
+  "no_internet" : "No Internet Connection",
 
 
   "our_mission_title" : "our Mission",

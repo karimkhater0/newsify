@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:skeletonizer/skeletonizer.dart';
 
 import '../../../../../core/styles.dart';
 import '../../../../../generated/l10n.dart';
@@ -24,16 +25,19 @@ class ForYouArticlesListView extends StatelessWidget {
           BlocBuilder<HomeCubit, HomeState>(
               builder: (context, state) {
                 var cubit = HomeCubit.get(context);
-                return SizedBox(
-                  height: 380,
-                  child: ListView.separated(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: cubit.homeNews.length,
-                    itemBuilder: (context, index) => ForYouArticleItem(
-                      model: cubit.homeNews[index],
-                    ),
-                    separatorBuilder: (context, index) => const SizedBox(width: 10,),
+                return Skeletonizer(
+                  enabled: state is HomeGetNewsLoadingState,
+                  child: SizedBox(
+                    height: 380,
+                    child: ListView.separated(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: cubit.homeNews.length,
+                      itemBuilder: (context, index) => ForYouArticleItem(
+                        model: cubit.homeNews[index],
+                      ),
+                      separatorBuilder: (context, index) => const SizedBox(width: 10,),
 
+                    ),
                   ),
                 );
               }

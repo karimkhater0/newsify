@@ -75,6 +75,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "next": MessageLookupByLibrary.simpleMessage("Continue"),
         "no_archive": MessageLookupByLibrary.simpleMessage(
             "You haven\'t archived any news yet."),
+        "no_data": MessageLookupByLibrary.simpleMessage("No Data"),
+        "no_internet":
+            MessageLookupByLibrary.simpleMessage("No Internet Connection"),
         "onboarding_body1": MessageLookupByLibrary.simpleMessage(
             "Discover a wide range of topics that interest you! From technology to sports, select your favorite categories and stay updated on the news that matters most to you."),
         "onboarding_body2": MessageLookupByLibrary.simpleMessage(

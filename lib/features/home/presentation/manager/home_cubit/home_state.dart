@@ -68,6 +68,12 @@ final class GetFromDatabaseErrorState extends HomeState {
 }
 
 final class DeleteFromDatabaseSuccessState extends HomeState {}
+final class DeleteFromDatabaseLoadingState extends HomeState {}
+final class DeleteFromDatabaseErrorState extends HomeState {
+  final String error;
+
+  DeleteFromDatabaseErrorState(this.error);
+}
 
 
 

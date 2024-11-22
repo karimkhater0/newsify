@@ -4,7 +4,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../generated/l10n.dart';
 import '../../manager/home_cubit/home_cubit.dart';
-import 'dismissible_background_widget.dart';
 import 'news_article_item.dart';
 
 class ArchiveListView extends StatelessWidget {
@@ -20,15 +19,8 @@ class ArchiveListView extends StatelessWidget {
               condition: cubit.archivedNews.isNotEmpty,
               builder: (context) =>ListView.separated(
                 itemCount: cubit.archivedNews.length,
-                itemBuilder: (context ,index) => Dismissible(
-                  background: const DismissibleBackgroundWidget(),
-                  onDismissed: (direction){
-                    cubit.deleteFromDatabase(cubit.archivedNews[index].articleId!);
-                  },
-                  key: Key(cubit.archivedNews[index].articleId!),
-                  child: NewsArticleItem(
-                    model: cubit.archivedNews[index],
-                  ),
+                itemBuilder: (context ,index) => NewsArticleItem(
+                  model: cubit.archivedNews[index],
                 ),
                 separatorBuilder: (context, index) => const Divider(),
 

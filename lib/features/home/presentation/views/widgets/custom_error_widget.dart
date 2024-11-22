@@ -1,20 +1,28 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/styles.dart';
-import '../../../../../generated/l10n.dart';
 
 class CustomErrorWidget extends StatelessWidget {
-  const CustomErrorWidget({super.key});
+  const CustomErrorWidget({super.key, required this.onRefresh, required this.message});
 
+  final void Function() onRefresh;
+  final String message;
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Text(
-          S.of(context).error,
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          message,
           textAlign: TextAlign.center,
           style: Styles.tsP1Regular,
 
-        )
+        ),
+        const SizedBox(height: 5,),
+        IconButton(
+            onPressed: onRefresh,
+            icon: const Icon(Icons.refresh_rounded,size: 40,)),
+      ],
     );
   }
 }

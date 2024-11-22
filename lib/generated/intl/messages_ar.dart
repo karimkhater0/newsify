@@ -74,6 +74,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "next": MessageLookupByLibrary.simpleMessage("استمرار"),
         "no_archive":
             MessageLookupByLibrary.simpleMessage("لم تقم بحفظ أي أخبار بعد."),
+        "no_data":
+            MessageLookupByLibrary.simpleMessage("لا يوجد بيانات لعرضها"),
+        "no_internet":
+            MessageLookupByLibrary.simpleMessage("لا يوجد اتصال بالانترنت"),
         "onboarding_body1": MessageLookupByLibrary.simpleMessage(
             "اكتشف مجموعة واسعة من الموضوعات التي تهمك! من التكنولوجيا إلى الرياضة، اختر تصنيفاتك المفضلة وابقَ على اطلاع بأحدث الأخبار التي تهمك."),
         "onboarding_body2": MessageLookupByLibrary.simpleMessage(

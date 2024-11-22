@@ -9,6 +9,7 @@ import 'package:newsify/features/onboarding/presentation/views/widgets/custom_bu
 import '../../../../../core/cache_helper.dart';
 import '../../../../../generated/l10n.dart';
 import '../../manager/home_cubit/home_cubit.dart';
+import 'custom_back_button.dart';
 import 'interests_item_widget.dart';
 
 class InterestsViewBody extends StatelessWidget {
@@ -33,7 +34,12 @@ class InterestsViewBody extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           /// Title
-          CustomTitle(title: S.of(context).interests),
+          Row(
+            children: [
+              const CustomBackButton(),
+              CustomTitle(title: S.of(context).interests),
+            ],
+          ),
 
           /// Interests
           Padding(
